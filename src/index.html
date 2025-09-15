@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnion SMP - Главная</title>
+    <meta name="description" content="Лучший Minecraft сервер с уникальным геймплеем и дружным комьюнити">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    <i class="fas fa-cube"></i>
+                    <span>Omnion SMP</span>
+                </a>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link active">Главная</a></li>
+                        <li><a href="about.html" class="nav-link">О нас</a></li>
+                        <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <button id="openDialog" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i>
+                    Связаться с нами
+                </button>
+
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Добро пожаловать на Omnion SMP</h1>
+                    <p class="hero-subtitle">Уникальный Minecraft сервер с модами, ивентами и дружным комьюнити</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-large btn-primary">
+                            <i class="fas fa-play"></i>
+                            Присоединиться
+                        </button>
+                        <button class="btn btn-large btn-secondary">
+                            <i class="fas fa-info-circle"></i>
+                            Узнать больше
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="minecraft-world">
+                        <div class="mc-block grass"></div>
+                        <div class="mc-block stone"></div>
+                        <div class="mc-block diamond"></div>
+                        <div class="mc-character"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Защита от гриферов</h3>
+                    <p>Система защиты территории и анти-грифер плагины</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Активное комьюнити</h3>
+                    <p>Более 1000 активных игроков и дружная атмосфера</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3>Уникальные моды</h3>
+                    <p>Кастомные моды и плагины для уникального геймплея</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Регулярные ивенты</h3>
+                    <p>Турниры, ивенты и конкурсы каждую неделю</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Server Stats -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="1000">0</div>
+                    <div class="stat-label">Активных игроков</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="365">0</div>
+                    <div class="stat-label">Дней онлайн</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Уникальных модов</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="99">0</div>
+                    <div class="stat-label">% Аптайм</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <dialog id="contactDialog" class="modal" aria-labelledby="dialogTitle">
+        <div class="modal-content">
+            <button class="modal-close" id="closeDialog">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <h2 id="dialogTitle" class="modal-title">Обратная связь</h2>
+            
+            <form id="contactForm" class="contact-form" method="dialog" novalidate>
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input id="name" name="name" type="text" required minlength="2" autocomplete="given-name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail</label>  
+                    <input id="email" name="email" type="email" required autocomplete="email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel"
+                           aria-describedby="phoneHelp" placeholder="+7 (___) ___-__-__"
+                           required pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$">
+                    <small id="phoneHelp">Формат: +7 (900) 000-00-00</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="topic">Тема</label>
+                    <select id="topic" name="topic" required>
+                        <option value="">Выберите тему</option>
+                        <option>Техническая поддержка</option>
+                        <option>Партнерство</option>
+                        <option>Жалоба</option>
+                        <option>Предложение</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" id="closeDialogBtn">Закрыть</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Отправить
+                    </button>
+                </div>
+            </form>
+        </div>
+    </dialog>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-cube"></i>
+                        <span>Omnion SMP</span>
+                    </div>
+                    <p>Лучший Minecraft сервер с 2023 года</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Сервер</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Правила</a></li>
+                        <li><a href="#">Донат</a></li>
+                        <li><a href="#">Статус</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@omnionsmp.ru</p>
+                        <p><i class="fas fa-phone"></i> +7 (777) 777-77-77</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Москва, Россия</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Omnion SMP. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

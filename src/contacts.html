@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Omnion SMP</title>
+    <meta name="description" content="Свяжитесь с Omnion SMP - техническая поддержка, партнерство, вопросы">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-cube"></i>
+                    <span>Omnion SMP</span>
+                </a>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Главная</a></li>
+                        <li><a href="about.html" class="nav-link">О нас</a></li>
+                        <li><a href="contacts.html" class="nav-link active">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <button id="openDialog" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i>
+                    Связаться
+                </button>
+
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Контакты</h1>
+                <p class="hero-subtitle">Свяжитесь с нами любым удобным способом</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Content -->
+    <main class="page-content">
+        <div class="container">
+            <!-- Контактная информация -->
+            <section class="content-section">
+                <div class="section-header">
+                    <h2>Свяжитесь с нами</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>info@omnionsmp.ru</p>
+                        <p>Ответ в течение 24 часов</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Телефон</h3>
+                        <p>+7 (777) 777-77-77</p>
+                        <p>Пн-Пт с 10:00 до 19:00</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                        <h3>Discord</h3>
+                        <p>OmnionSMP</p>
+                        <p>Онлайн поддержка 24/7</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <h3>Telegram</h3>
+                        <p>@omnion_smp</p>
+                        <p>Новости и анонсы</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Быстрая форма -->
+            <section class="content-section">
+                <div class="section-header">
+                    <h2>Быстрая связь</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="quick-contact-form">
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Имя *</label>
+                                <input id="contact-name" type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email *</label>
+                                <input id="contact-email" type="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Тема</label>
+                            <select id="contact-subject">
+                                <option>Техническая поддержка</option>
+                                <option>Партнерство</option>
+                                <option>Жалоба</option>
+                                <option>Предложение</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Сообщение *</label>
+                            <textarea id="contact-message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Отправить сообщение
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <section class="content-section">
+                <div class="section-header">
+                    <h2>Частые вопросы</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>⏰ В какое время лучше звонить?</h3>
+                        <p>Мы доступны с понедельника по пятницу с 10:00 до 19:00 по московскому времени.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>📧 Почему не отвечают на email?</h3>
+                        <p>Отвечаем на все письма в течение 24 часов. Проверьте папку "Спам".</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>🔄 Как восстановить доступ к аккаунту?</h3>
+                        <p>Напишите в техподдержку с email, к которому привязан аккаунт.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>💳 Как оформить донат?</h3>
+                        <p>Перейдите в раздел "Донат" на сервере или напишите нам.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <dialog id="contactDialog" class="modal" aria-labelledby="dialogTitle">
+        <!-- Модалка как на главной -->
+    </dialog>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Футер как на главной -->
+    </footer>
+</body>
+</html>
